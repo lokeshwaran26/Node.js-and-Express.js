@@ -1,10 +1,10 @@
 
-const amount = 12;
+const { lokesh, lithi}= require('./4-names')
+const sayHi  = require('./5-utils')
+const data = require('./6-alternative-flavor')
+const addnum = require('./7-mind-grenade')
+// console.log(data)
 
-if (amount < 10){
-    console.log("Larger number");
-}else{
-    console.log("Small number");
-}
-
-console.log(`Hey this is my first Node App`);
+// sayHi("Peter");
+// sayHi(lokesh);
+// sayHi(lithi);
