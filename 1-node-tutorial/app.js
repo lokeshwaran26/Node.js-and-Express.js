@@ -1,10 +1,11 @@
 
-const { lokesh, lithi}= require('./4-names')
-const sayHi  = require('./5-utils')
-const data = require('./6-alternative-flavor')
-const addnum = require('./7-mind-grenade')
-// console.log(data)
+const { readFileSync, writeFileSync} = require('fs');
 
-// sayHi("Peter");
-// sayHi(lokesh);
-// sayHi(lithi);
+const first = readFileSync('./content/subfolder/first.txt', 'utf-8');
+const second = readFileSync('./content/subfolder/second.txt', 'utf-8');
+console.log(first,  second);
+
+writeFileSync(
+    'content/subfolder/result.txt',
+    `The result : ${first}, ${second}`
+)
