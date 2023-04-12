@@ -1,12 +1,25 @@
+const http = require('http');
+const PORT = 5000;
+const server =http.createServer((req, res)=>{
+    console.log(req)
+    if( req.url === '/'){
+        res.end("Welcome to Home Page!")
+    }
+    else if( req.url === '/about'){
+        res.end("Hi this is lokesh a full-stack developer!")
+    }
+    else {
+        res.end(
+        `
+        <h1> Oops!</h1>
+        <p> Sorry this Page is currenty not availabe</p>
+        <a href='/' >Home</a>
+        `
+    )
+        }   
+})
 
-const { readFileSync, writeFileSync} = require('fs');
+server.listen(PORT, ()=>{
+    console.log(` The Server listening on port ${PORT}`)
+})
 
-const first = readFileSync('./content/subfolder/first.txt', 'utf-8');
-const second = readFileSync('./content/subfolder/second.txt', 'utf-8');
-console.log(first);
-console.log(second);
-
-writeFileSync(
-    'content/subfolder/result.txt',
-    `The result : ${first}, ${second}`
-)
