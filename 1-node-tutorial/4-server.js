@@ -6,7 +6,7 @@ const server =http.createServer((req, res)=>{
         res.end("Welcome to Home Page!")
     }
     else if( req.url === '/about'){
-        res.end("Hi this is lokesh a full-stack developer!")
+        res.end("Hi this is lokeshwaran a full-stack developer!")
     }
     else {
         res.end(
@@ -16,10 +16,9 @@ const server =http.createServer((req, res)=>{
         <a href='/' >Home</a>
         `
     )
-        }   
+        }
 })
 
 server.listen(PORT, ()=>{
     console.log(` The Server listening on port ${PORT}`)
 })
-
