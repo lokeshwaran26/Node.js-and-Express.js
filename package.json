@@ -1,0 +1,24 @@
+{
+  "name": "node.js-and-epress",
+  "version": "1.0.0",
+  "description": "<img alt=\"Freecodecamp\" align = \"left\" src =\"https://img.shields.io/badge/Freecodecamp-%23123.svg?&style=for-the-badge&logo=freecodecamp&logoColor=green\" />",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lokeshwaran26/Node.js-and-Express.js.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lokeshwaran26/Node.js-and-Express.js/issues"
+  },
+  "homepage": "https://github.com/lokeshwaran26/Node.js-and-Express.js#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.3",
+    "lodash": "^4.17.21"
+  }
+}
