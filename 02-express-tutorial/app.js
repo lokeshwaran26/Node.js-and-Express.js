@@ -1,19 +1,22 @@
-const exp = require('constants');
 const express = require('express');
-const path = require('path');
-
+const { products, people } = require('./data')
 
 const app = express();
 
-app.use(express.static('./public'))
-
-// app.get('/',(req,res)=>{
-//     res.sendFile(path.resolve(__dirname,"./navbar-app/index.html"));
-// })
-
-app.all('*', (req, res)=>{
-    res.status(404).send(" Resource not found!");
+app.get('/',( req, res)=>{
+    res.send("<h1> Home Page</h1> <a href='/api/products'>Products</a>")
 })
+
+app.get('/api/products', (req, res)=>{
+    const newProducts = products.map((product)=>{
+        const { id, name, image } = product
+        return { id, name, image }
+    })
+
+    res.json(newProducts)
+})
+
+
 
 app.listen(5000, ()=>{
     console.log("server listening on port 5000...")

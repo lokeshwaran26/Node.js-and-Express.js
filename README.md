@@ -15,3 +15,11 @@ Day 04 : NPM Command, First Package, Share Code, Nodemon, Uninstall, Global Inst
 Day 05 : Async Patterns - Blocking Code, Async Patterns - Setup Promises, Async Patterns - Refactor To Async, Async Patterns - Node's Native Option, Events Info, Events Emitter - Code Example, Events Emitter - Additional Info.
 
 Day 06 : Events Emitter - Http Module Example, Streams Intro, Streams - Read File, Streams - Additional Info, Streams - Http Example, End Of Node Tutorial Module.
+
+Day 07 : HTTP Request/Response Cycle, Http Messages, Starter Project Install, Starter Overview, Http Basics,
+
+Day 08 : Http - Headers, Http - Request Object, Http - Html File, Http - Html File,
+
+Day 09 : Express Info, Express Basics, Express Basics, Express - All Static
+
+Day 10 : API Vs SSR, JSON Basics, Params, Query String - Setup
