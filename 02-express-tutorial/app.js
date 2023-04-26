@@ -1,14 +1,14 @@
 const express = require('express');
-const { products, people } = require('./data')
+const { products } = require('./data')
 
 const app = express();
 
-app.get('/',( req, res)=>{
-    res.send("<h1> Home Page</h1> <a href='/api/products'>Products</a>")
+app.get('/', (req, res) => {
+    res.send("<h1>Welcome to home page!</h1> <a href='/api/products'>Products</a>")
 })
 
-app.get('/api/products', (req, res)=>{
-    const newProducts = products.map((product)=>{
+app.get('/api/products', (res, req) => {
+    const newProducts = products.map((product) => {
         const { id, name, image } = product
         return { id, name, image }
     })
@@ -16,8 +16,6 @@ app.get('/api/products', (req, res)=>{
     res.json(newProducts)
 })
 
-
-
-app.listen(5000, ()=>{
+app.listen(5000, () => {
     console.log("server listening on port 5000...")
 })
