@@ -5,7 +5,7 @@ const  app = express();
 const PORT = 5000;
 
 app.get('/', (req, res) => {
-    res.send("<h1>Welcome to home page!</h1> <a href='/api/products'>Products</a>")
+    res.send("<h1>Welcome to home page!</h1> <a href='/api/products1'>Products</a>")
 })
 
 app.get('/api/products', (res, req) => {
@@ -15,6 +15,13 @@ app.get('/api/products', (res, req) => {
     })
 
     res.json(newProducts)
+}
+)
+
+app.get('/api/products1', (res, req) => {
+    const singleProduct = products.find((product)=> product.id === 1)
+
+    res.json(singleProduct)
 })
 
 app.listen(PORT , () => {
