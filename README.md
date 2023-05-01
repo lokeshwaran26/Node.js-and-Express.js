@@ -23,3 +23,11 @@ Day 08 : Http - Headers, Http - Request Object, Http - Html File, Http - Html Fi
 Day 09 : Express Info, Express Basics, Express Basics, Express - All Static
 
 Day 10 : API Vs SSR, JSON Basics, Params, Query String - Setup
+
+Day 11 : Route Params, Params - Extra Info, Query String, Additional Params And Query String Info, Middleware - Setup, APP.USE
+
+Day 12 : Multiple Middleware Functions, Additional Middleware Info, Methods - GET, Methods - POST, Methods - POST (Form Example)
+
+Day 13 : Methods - POST (Javascript Example), Install Postman, Methods - PUT, Methods - DELETE, Express Router - Setup, Express Router - Controllers
+
+<h2>Completed!</h2>
