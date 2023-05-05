@@ -7,7 +7,7 @@
     "start": "nodemon app.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "loki",
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.2",
